@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:spotify_clone/core/theme/theme.dart';
-import 'package:spotify_clone/features/auth/view/pages/login_page.dart';
 import 'package:spotify_clone/features/auth/view/pages/signup_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ProviderScope(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
